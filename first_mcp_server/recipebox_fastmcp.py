@@ -37,6 +37,19 @@ def search_recipes(tag: str) -> list[dict]:
     """Search recipes by a single tag, e.g. 'quick' or 'vegetarian'."""
     return [{"id": k, **v} for k, v in RECIPES.items() if tag in v["tags"]]
 
+VALID_TAGS = ["quick", "vegetarian", "sunday", "meat", "vegan"]
+
+
+@mcp.resource("recipe://tags")
+def valid_tags() -> list[str]:
+    """Return a list of all valid tags for recipes."""
+    return VALID_TAGS
+
+
+@mcp.prompt
+def plan_weekly_meals() -> str:
+    """Plan a week's worth of meals, using only recipes from the box."""
+    return "I will plan a week's worth of meals using the recipes in the RecipeBox."
 
 if __name__ == "__main__":
     mcp.run()
