@@ -53,3 +53,8 @@ and produce identical results when called. Try both, side by side.
 official SDK also ships its own bundled high-level class, which was renamed in its
 newest major version specifically to avoid confusion with the standalone `fastmcp`
 project — which remains the more widely-used choice for real-world servers today.
+=======
+## Model Context Protocol (MCP)
+
+Model Context Protocol (MCP) is an open protocol that standardizes how applications provide tools and context to LLMs. LangChain agents can use tools defined on MCP servers using the langchain-mcp-adapters library.
+
