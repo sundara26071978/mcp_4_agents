@@ -28,6 +28,12 @@ npx @modelcontextprotocol/inspector python recipebox_lowlevel.py
 npx @modelcontextprotocol/inspector python recipebox_fastmcp.py
 ```
 
+## Add it to Claude-Desktop host 
+
+```bash
+uv run fastmcp install claude-desktop recipebox_fastmcp.py
+```
+
 Both expose the identical three tools — `list_recipes`, `get_recipe`, `search_recipes` —
 and produce identical results when called. Try both, side by side.
 
