@@ -8,8 +8,16 @@ fastmcp run my_server.py:mcp --transport http --port 8000
 ```
 
 ## Run the server with prefabricated UI 
+
+
+### https://github.com/PrefectHQ/prefab
+### The generative UI framework that even humans can use.
+
+### Prefab is a UI framework for building rich, interactive interfaces in Python. Create MCP Apps, data dashboards,
+
 ```bash
 fastmcp dev apps .\my_server_with_ui.py
+
 ```
 
 
