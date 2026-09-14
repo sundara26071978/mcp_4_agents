@@ -52,4 +52,4 @@ def plan_weekly_meals() -> str:
     return "I will plan a week's worth of meals using the recipes in the RecipeBox."
 
 if __name__ == "__main__":
-    mcp.run()
+    mcp.run(transport="http")  # or: transport="websocket"
