@@ -19,6 +19,8 @@ pip install fastmcp
 python recipebox_lowlevel.py
 # or
 python recipebox_fastmcp.py
+#or 
+fastmcp run recipebox_fastmcp.py:mcp --transport http --port 8000
 ```
 
 ## Inspect either one
@@ -29,7 +31,7 @@ npx @modelcontextprotocol/inspector python recipebox_fastmcp.py
 ```
 
 ## Add it to Claude-Desktop host 
-
+** Ensure the MCP server is running
 ```bash
 uv run fastmcp install claude-desktop recipebox_fastmcp.py
 ```
