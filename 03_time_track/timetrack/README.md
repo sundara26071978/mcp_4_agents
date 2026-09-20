@@ -10,7 +10,7 @@ AI assistant, and both see the exact same data.
 3. `uv add fastmcp fastapi "uvicorn[standard]"`
 4. `uv run fastmcp version` — confirm the install
 5. This repo's `database.py`, `main.py`, and `static/` are already written for you
-6. `uv run uvicorn main:app --reload`
+6. `uv run uvicorn main:app --reload` or `uv run uvicorn main:app --reload --host 127.0.0.1 --port 8000`
 7. Visit `http://127.0.0.1:8000` (website) and `http://127.0.0.1:8000/mcp` (MCP)
 8. Connect Claude Desktop (see below)
 9. Deploy to Prefect Horizon for a public URL (see below)
