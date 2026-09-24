@@ -979,6 +979,7 @@ dependencies = [
     { name = "langgraph" },
     { name = "mcp" },
     { name = "prefab-ui" },
+    { name = "rich" },
     { name = "uvicorn", extra = ["standard"] },
 ]
 
@@ -990,6 +991,7 @@ requires-dist = [
     { name = "langgraph", specifier = ">=1.2.11" },
     { name = "mcp", specifier = ">=1.29.0" },
     { name = "prefab-ui", specifier = ">=0.20.2" },
+    { name = "rich", specifier = ">=15.0.0" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.52.4" },
 ]
 
